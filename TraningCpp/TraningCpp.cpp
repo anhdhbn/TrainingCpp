@@ -14,9 +14,19 @@
 #include <queue>
 #include <stack>
 
-int main()
+using namespace std;
+
+int main() 
 {
-
-    return 0;
+	int n;
+	cin >> n;
+	vector<long int> myVec(pow(10, 5), 0);
+	for (int i = 0; i < n; i++)
+	{
+		int temp;
+		cin >> temp;
+		myVec[temp]++;
+		cout << myVec[temp] << endl;
+	}
+	return 0;
 }
-
